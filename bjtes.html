@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>j test</title>
+  <meta name="description" content="j test description">
+  <style>
+    /* Center-align everything */
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      color: red;
+      animation: bounce 2s ease-in-out infinite; /* Apply the bounce animation */
+    }
+
+    /* Define the bounce animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Style the red button */
+    button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>test web</h1> 
+
+  <img src="jay1.png" style="border: 5px solid #FF0000;">
+
+  <!-- Change the link address to "testjg" and style the anchor element -->
+  <a href="file:///C:/Users/jgarc/Desktop/test/bjtes.html" target="_blank" style="background-color: black; color: red;">
+    <h2>j test</h2>
+  </a>
+
+  <!-- Add the button with JavaScript to say "Hello" and play the audio -->
+  <button id="helloButton">Hello</button>
+
+  <script>
+    // JavaScript function to say "Hello" and play the audio
+    document.getElementById("helloButton").addEventListener("click", function() {
+      var button = document.getElementById("helloButton");
+      button.textContent = "Hello";
+      
+      var audio = new Audio("quothello-therequot-158832.mp3");
+      audio.play();
+    });
+  </script>
+</body>
+</html>
